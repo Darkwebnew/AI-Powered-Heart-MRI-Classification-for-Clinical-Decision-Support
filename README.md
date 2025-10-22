@@ -1,8 +1,3 @@
-<div align="center">
-
-![Banner](/docs/images/banner.png)
-
-[![Watch the demo](https://img.youtube.com/vi/JMZrROrt5qQ/0.jpg)](https://youtu.be/JMZrROrt5qQ?si=V046ShjApX__89Iv)
 
 # 🫀 AI‑Powered Heart MRI Classification
 
