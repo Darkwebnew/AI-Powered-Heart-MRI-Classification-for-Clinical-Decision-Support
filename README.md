@@ -1,4 +1,4 @@
-# 🫀 AI-Powered Heart MRI Classification for Clinical Decision Support
+<img width="472" height="133" alt="image" src="https://github.com/user-attachments/assets/aa6eb434-ab93-463e-8280-5246524bc230" /># 🫀 AI-Powered Heart MRI Classification for Clinical Decision Support
 
 ### 💎 **Enterprise AI for Global Cardiac Care: Explainable, Fast, Trusted**
 
@@ -260,8 +260,8 @@ Access the app at **http://localhost:8080**
 
 - **SHIVRAJ R** — [GitHub profile](https://github.com/ShivrajRajasekaran/)
 - **SRIRAM V** — [GitHub profile](https://github.com/darkwebnew/)
-- **M MADHURI G** — [GitHub profile](https://github.com/Munimadhuriganji)
-- **DARSHANI** — [GitHub profile](https://github.com/Gedipudidarshani)
+- **MADHURI G M** — [GitHub profile](https://github.com/Munimadhuriganji)
+- **DARSHANI G** — [GitHub profile](https://github.com/Gedipudidarshani)
 
 *We welcome contributions! Feel free to open issues or submit pull requests.*
 
