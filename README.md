@@ -1,13 +1,20 @@
-
-# 🫀 AI‑Powered Heart MRI Classification
-
-[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Flask](https://img.shields.io/badge/Flask-2.x-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/) [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/) [![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-Services-052FAD?logo=ibmcloud&logoColor=white)](https://www.ibm.com/cloud)
+# 🫀 AI-Powered Heart MRI Classification for Clinical Decision Support
 
 ### 💎 **Enterprise AI for Global Cardiac Care: Explainable, Fast, Trusted**
 
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-2.x-000000?logo=flask&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white) ![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-Services-052FAD?logo=ibmcloud&logoColor=white) ![IBM Finalist](https://img.shields.io/badge/🏆%20IBM-FINALIST-FFD500?style=for-the-badge)
+
+![Project Banner](/docs/images/banner.png)
+
 > **🏆 IBM FINALIST** — Recognized for innovation in AI-powered clinical decision support
 
-</div>
+---
+
+## 🎥 Watch the Demo
+
+[![Watch the demo](https://img.youtube.com/vi/JMZrROrt5qQ/0.jpg)](https://youtu.be/JMZrROrt5qQ?si=V046ShjApX__89Iv)
+
+*Click above to see the system in action: MRI upload → instant classification → explainable AI heatmaps → clinical dashboard*
 
 ---
 
@@ -16,14 +23,14 @@
 **Transforming cardiac diagnostics with cutting-edge AI that delivers real-world clinical impact:**
 
 - ⚡ **Faster Diagnosis** — Reduces MRI interpretation time from hours to seconds, enabling rapid clinical response
-- 🔬 **Clinical Trust & Transparency** — Explainable AI (XAI) heatmaps provide visual evidence for every prediction, building physician confidence
-- 🎯 **Automated Priority Triage** — Intelligent classification helps prioritize critical cases, optimizing workflow efficiency
-- ☁️ **Scalable Cloud Infrastructure** — Built on IBM Cloud with enterprise-grade storage, database, and AI services for global deployment
-- 🏅 **IBM Selection** — Validated by IBM as a finalist, demonstrating technical excellence and real-world applicability
+- 🔬 **Explainable AI for Clinical Trust** — XAI heatmaps (Grad-CAM, Integrated Gradients) provide visual evidence for every prediction, building physician confidence and enabling validation
+- 🎯 **Automated Priority Triage** — Intelligent classification helps prioritize critical cases, optimizing workflow efficiency in busy cardiac centers
+- ☁️ **Cloud-Ready & Scalable** — Built on IBM Cloud with enterprise-grade Object Storage (COS), Db2 database, and Watson AI services for global deployment
+- 🏅 **IBM Recognition** — Selected as finalist, demonstrating technical excellence, innovation, and real-world applicability in healthcare AI
 
 ---
 
-## 💡 Innovation & WOW Factors
+## 💡 WOW Factors & Innovations
 
 **What makes this project stand out from the crowd:**
 
@@ -32,129 +39,163 @@
 - **Grad-CAM & Integrated Gradients** generate pixel-level heatmaps showing exactly which anatomical regions influenced each prediction
 - Transforms "black box" models into **transparent, trustworthy clinical tools**
 - Enables radiologists to validate AI reasoning against their own expert analysis
+- Color-coded overlays highlight regions of interest (e.g., myocardial walls, chambers, valve areas)
 
 ### 🎨 **Advanced Multi-Class Classification**
 
 - **4-class pathology detection:**
-  - Normal
-  - Myocardial Infarction
-  - Dilated Cardiomyopathy (DCM)
-  - Hypertrophic Cardiomyopathy (HCM)
+  - ✅ Normal
+  - 🔴 Myocardial Infarction
+  - 🔵 Dilated Cardiomyopathy (DCM)
+  - 🟣 Hypertrophic Cardiomyopathy (HCM)
 - State-of-the-art CNN architecture (MobileNetV2 + custom layers) optimized for cardiac MRI
 - Real-time inference: predictions in <2 seconds
+- High accuracy with robust validation on diverse datasets
 
 ### ☁️ **Production-Ready IBM Cloud Integration**
 
-- **IBM Cloud Object Storage (COS):** Secure, scalable DICOM/MRI image storage
-- **IBM Db2 on Cloud:** Relational database for patient metadata, case history, and audit trails
-- **Watson Studio (optional):** Training pipeline for model retraining and continuous improvement
-- **Multi-region deployment:** Designed for HIPAA compliance and low-latency global access
+- **IBM Object Storage (COS):** Secure, scalable storage for DICOM images and medical records
+- **IBM Db2:** Relational database for case metadata, patient demographics, and audit trails
+- **Watson AI / Watsonx:** Real-time AI inference with enterprise SLAs
+- **Dashboard Analytics:** Aggregated stats, confidence distribution, cohort-level insights for quality improvement
 
 ### 📊 **Interactive Clinical Dashboard**
 
-- Real-time cohort analytics: confidence distributions, pathology prevalence, processing times
-- Case management UI: filter by diagnosis, sort by confidence, search patient IDs
-- Export reports for EMR/EHR integration
+- Live case tracking with filterable views (by severity, date, physician)
+- Model confidence metrics and prediction trends over time
+- Export capabilities for clinical reports and research
+
+---
+
+## 🏥 Clinical Use Case
+
+In a typical cardiology workflow, radiologists often face backlogs of MRI scans requiring expert interpretation—leading to delayed diagnoses and treatment. **This AI system integrates seamlessly into clinical pipelines**, automatically analyzing uploaded cardiac MRI images and providing instant multi-class predictions alongside explainable heatmaps. Physicians can quickly review AI-assisted insights, prioritize urgent cases (e.g., acute myocardial infarction), and validate findings with transparent visual evidence. By reducing interpretation time and enhancing diagnostic confidence, the system supports faster clinical decision-making, better patient outcomes, and more efficient use of specialist time—particularly valuable in resource-constrained or high-volume settings.
 
 ---
 
 ## 📸 Sample Results & Screenshots
 
-### 🖼️ **Image Gallery**
+**Visual walkthrough of the platform:**
 
-<div align="center">
-
-| 📤 MRI Upload Interface | 🧠 Prediction Output |
-|:---:|:---:|
-| ![MRI Upload](/docs/images/mri_upload.png) | ![Prediction Output](/docs/images/prediction_output.png) |
-| *Upload MRI scans in DICOM or PNG/JPG format* | *Real-time classification with confidence scores* |
-
-| 🔥 XAI Heatmap Visualization | 📊 Analytics Dashboard |
-|:---:|:---:|
-| ![XAI Heatmap](/docs/images/heatmap.png) | ![Dashboard](/docs/images/dashboard.png) |
-| *Grad-CAM heatmaps highlight diagnostic regions* | *Comprehensive cohort statistics and insights* |
-
-| 📋 Case List Management |
-|:---:|
-| ![Case List](/docs/images/case_list.png) |
-| *Browse, filter, and export historical cases* |
-
-</div>
+| MRI Upload | Prediction Output | XAI Heatmap | Dashboard | Case List |
+|------------|-------------------|-------------|-----------|------------|
+| ![MRI Upload Interface](/docs/images/mri_upload.png) | ![Prediction Results](/docs/images/prediction_output.png) | ![Explainable AI Heatmap](/docs/images/heatmap.png) | ![Analytics Dashboard](/docs/images/dashboard.png) | ![Case Management](/docs/images/case_list.png) |
+| Upload DICOM or image files | Instant 4-class prediction with confidence scores | Color-coded anatomical focus zones | Real-time cohort analytics | Searchable, sortable case history |
 
 ---
 
 ## 🏗️ Architecture
 
-### 📐 **System Schematic**
+**System Design & Data Flow:**
 
 ![Architecture Diagram](/docs/images/architecture.png)
-*End-to-end pipeline: Upload → Preprocessing → CNN Inference → XAI Generation → Storage → Dashboard*
 
-### 🔄 **Technical Flow**
+*High-level architecture showing user interface, Flask backend, TensorFlow model inference, IBM Cloud services (COS, Db2, Watson AI), and dashboard analytics pipeline*
+
+### 🔧 Technical Flow
 
 ```mermaid
 graph LR
-    A[MRI Upload] --> B[Preprocessing]
-    B --> C[CNN Model]
-    C --> D[Prediction]
-    C --> E[XAI: Grad-CAM]
-    D --> F[IBM Db2]
-    E --> G[IBM COS]
-    F --> H[Dashboard]
-    G --> H
+    A[User/Clinician] -->|Upload MRI| B[Flask Web App]
+    B -->|Store Image| C[IBM Cloud Object Storage]
+    B -->|Inference Request| D[TensorFlow Model]
+    D -->|Prediction + XAI| B
+    B -->|Save Metadata| E[IBM Db2 Database]
+    B -->|Analytics Query| E
+    E -->|Aggregated Data| F[Dashboard Visualization]
+    D -.->|Watson AI Optional| G[IBM Watsonx]
+    F --> A
 ```
 
-### 🧱 **Key Components**
-
-1. **Frontend (Flask + Jinja2):**
-   - Responsive web UI for upload, viewing, and dashboard
-   - AJAX-based asynchronous processing for smooth UX
-
-2. **Backend (Python + TensorFlow):**
-   - MobileNetV2 base + custom dense layers
-   - Grad-CAM / Integrated Gradients for XAI
-   - Image preprocessing pipeline (resize, normalize, augment)
-
-3. **Storage (IBM Cloud):**
-   - **Object Storage:** DICOM/image files
-   - **Db2:** Case metadata, predictions, timestamps
-
-4. **Model Training:**
-   - Dataset: Curated cardiac MRI dataset (details in `notebooks/`)
-   - Augmentation: rotation, zoom, brightness, contrast
-   - Metrics: accuracy, precision, recall, F1, AUC-ROC
+**Key Components:**
+- **Frontend:** HTML/CSS/JS with responsive design for desktop and tablet use
+- **Backend:** Python Flask REST API handling uploads, inference orchestration, database queries
+- **AI Engine:** TensorFlow 2.x with custom-trained CNN + XAI modules (Grad-CAM, IG)
+- **Storage:** IBM COS for DICOM/image files; Db2 for structured case data
+- **Monitoring:** Real-time dashboard with Plotly/D3.js visualizations
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Features at a Glance
 
-### 📋 Prerequisites
+✅ **Multi-class cardiac pathology classification** (4 conditions)  
+✅ **Explainable AI (XAI)** with Grad-CAM and Integrated Gradients heatmaps  
+✅ **DICOM & standard image format support**  
+✅ **IBM Cloud integration** (COS, Db2, Watson AI)  
+✅ **Real-time inference** (<2 sec per scan)  
+✅ **Clinical dashboard** with analytics, trends, and case management  
+✅ **Scalable, production-ready architecture**  
+✅ **Secure, audit-compliant** data handling  
 
-- Python 3.9+
-- IBM Cloud account (for COS & Db2)
-- TensorFlow 2.x
-- Flask 2.x
+---
 
-### 🔧 Installation
+## 🛠️ Tech Stack
 
-1) **Clone the repository:**
+| Category | Technologies |
+|----------|-------------|
+| **AI/ML** | TensorFlow 2.x, Keras, NumPy, OpenCV, scikit-learn |
+| **Backend** | Python 3.9+, Flask 2.x, Gunicorn |
+| **Frontend** | HTML5, CSS3, JavaScript, Bootstrap 5, Plotly.js |
+| **Cloud Services** | IBM Cloud Object Storage (COS), IBM Db2, IBM Watson AI/Watsonx |
+| **XAI** | tf-explain (Grad-CAM), Integrated Gradients, LIME |
+| **Data Formats** | DICOM, PNG, JPEG, NIfTI |
+| **DevOps** | Docker, Git, GitHub Actions (CI/CD) |
+
+---
+
+## 📦 Installation & Setup
+
+### Prerequisites
+
+- Python 3.9 or higher
+- IBM Cloud account (free tier available)
+- Git
+
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/Darkwebnew/AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support.git
 cd AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support
 ```
 
-2) **Install dependencies:**
+### 2️⃣ Create Virtual Environment
 
 ```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-3) **Configure environment** (examples in `.env.example`):
-   - `IBM_COS_BUCKET`, `IBM_COS_APIKEY`, `IBM_COS_ENDPOINT`
-   - `DB2_DSN` / credentials
+### 4️⃣ Configure IBM Cloud Credentials
 
-4) **Launch the application:**
+Create a `.env` file in the project root:
+
+```env
+IBM_COS_ENDPOINT=https://s3.us-south.cloud-object-storage.appdomain.cloud
+IBM_COS_API_KEY_ID=your_api_key_here
+IBM_COS_INSTANCE_CRN=your_instance_crn_here
+IBM_COS_BUCKET_NAME=your_bucket_name
+
+IBM_DB2_HOSTNAME=your_db2_hostname
+IBM_DB2_PORT=50000
+IBM_DB2_DATABASE=your_database_name
+IBM_DB2_USERNAME=your_username
+IBM_DB2_PASSWORD=your_password
+```
+
+### 5️⃣ Initialize Database
+
+```bash
+python init_db.py
+```
+
+### 6️⃣ Run the Application
 
 ```bash
 python app.py
@@ -162,13 +203,17 @@ python app.py
 flask run --host 0.0.0.0 --port 8080
 ```
 
+Access the app at **http://localhost:8080**
+
 ---
 
 ## 👩‍⚕️ Usage
 
-- **Upload MRI/DICOM** → view prediction + XAI heatmap
-- **Save case:** metadata stored in Db2; images to Object Storage
-- **Monitor dashboard:** cohort stats, model confidence distribution
+1. **Upload MRI/DICOM:** Navigate to the upload page and select a cardiac MRI image
+2. **View Prediction:** Instantly see the classification result with confidence scores and XAI heatmap overlay
+3. **Save Case:** Store the case with metadata (patient ID, date, notes) to IBM Db2; image archived to COS
+4. **Monitor Dashboard:** Access cohort statistics, model confidence distribution, and case trends
+5. **Search & Export:** Filter cases by date, diagnosis, or confidence; export reports for clinical review
 
 ---
 
@@ -177,14 +222,35 @@ flask run --host 0.0.0.0 --port 8080
 ```
 .
 ├── app.py                      # Main Flask application
-├── models/                     # Trained model files
-├── notebooks/                  # Jupyter notebooks for experiments
-├── static/ | templates/        # Frontend assets
+├── init_db.py                  # Database initialization script
+├── requirements.txt            # Python dependencies
+├── models/
+│   ├── cardiac_model.h5        # Trained TensorFlow model
+│   └── model_config.json       # Model architecture config
+├── notebooks/
+│   ├── training.ipynb          # Model training experiments
+│   └── evaluation.ipynb        # Performance evaluation
+├── static/
+│   ├── css/                    # Stylesheets
+│   ├── js/                     # Frontend JavaScript
+│   └── uploads/                # Temporary upload directory
+├── templates/
+│   ├── index.html              # Upload interface
+│   ├── result.html             # Prediction display
+│   └── dashboard.html          # Analytics dashboard
 ├── docs/
 │   └── images/
+│       ├── banner.png
+│       ├── architecture.png
 │       ├── heatmap.png
-│       ├── mri_example.png
-│       └── dashboard.png
+│       ├── mri_upload.png
+│       ├── prediction_output.png
+│       ├── dashboard.png
+│       └── case_list.png
+├── utils/
+│   ├── xai.py                  # Explainable AI functions
+│   ├── ibm_cloud.py            # IBM Cloud service integrations
+│   └── preprocessing.py        # Image preprocessing utilities
 └── README.md
 ```
 
@@ -197,25 +263,31 @@ flask run --host 0.0.0.0 --port 8080
 - **M MADHURI G** — [GitHub profile](https://github.com/Munimadhuriganji)
 - **DARSHANI** — [GitHub profile](https://github.com/Gedipudidarshani)
 
-*If you share GitHub usernames, we'll update these links to point directly to your profiles.*
+*We welcome contributions! Feel free to open issues or submit pull requests.*
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **IBM Cloud** and the IBM Academic/Startup programs for credits, tooling, and guidance
-- **Open-source community:** TensorFlow, Flask, and visualization libraries
+- **IBM Cloud** and the IBM Academic/Startup programs for credits, tooling, and technical guidance
+- **Open-source community:** TensorFlow, Flask, Plotly, and medical imaging libraries
+- **Medical datasets:** Thanks to public cardiac MRI repositories that enabled model training
+- **Healthcare mentors** who provided clinical validation and feedback
 
 ---
 
 ## 📜 License
 
-This project is intended for **research and educational use**. For clinical deployment, ensure regulatory compliance and validation.
+This project is intended for **research and educational use**. For clinical deployment, ensure regulatory compliance (FDA, CE marking, HIPAA) and thorough validation with institutional review board (IRB) approval.
 
 ---
 
 <div align="center">
 
 **Made with ❤️ for advancing global cardiac care through explainable AI**
+
+⭐ **Star this repo if you find it useful!** ⭐
+
+[Report Bug](https://github.com/Darkwebnew/AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support/issues) · [Request Feature](https://github.com/Darkwebnew/AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support/issues) · [Documentation](https://github.com/Darkwebnew/AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support/wiki)
 
 </div>
