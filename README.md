@@ -192,10 +192,10 @@ flask run --host 0.0.0.0 --port 8080
 
 ## 👩‍💻 Authors & Contributors
 
-- **SRIRAM V** — [GitHub profile](https://github.com/)
-- **SHIVRAJ R G** — [GitHub profile](https://github.com/)
-- **M MADHURI G** — [GitHub profile](https://github.com/)
-- **DARSHANI** — [GitHub profile](https://github.com/)
+- **SHIVRAJ R** — [GitHub profile](https://github.com/ShivrajRajasekaran/)
+- **SRIRAM V** — [GitHub profile](https://github.com/darkwebnew/)
+- **M MADHURI G** — [GitHub profile](https://github.com/Munimadhuriganji)
+- **DARSHANI** — [GitHub profile](https://github.com/Gedipudidarshani)
 
 *If you share GitHub usernames, we'll update these links to point directly to your profiles.*
 
