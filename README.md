@@ -4,10 +4,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-2.x-000000?logo=flask&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white) ![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-Services-052FAD?logo=ibmcloud&logoColor=white) ![IBM Finalist](https://img.shields.io/badge/🏆%20IBM-FINALIST-FFD500?style=for-the-badge)
 
-![Project Banner](/docs/images/banner.png)
-
-> **🏆 IBM FINALIST** — Recognized for innovation in AI-powered clinical decision support
-
 ---
 
 ## 🎥 Watch the Demo
@@ -75,12 +71,15 @@ In a typical cardiology workflow, radiologists often face backlogs of MRI scans 
 
 ## 📸 Sample Results & Screenshots
 
-**Visual walkthrough of the platform:**
+<img width="1143" height="785" alt="image" src="https://github.com/user-attachments/assets/318490bd-f3e8-45ed-a2e7-72f2379e043a" />
 
-| MRI Upload | Prediction Output | XAI Heatmap | Dashboard | Case List |
-|------------|-------------------|-------------|-----------|------------|
-| ![MRI Upload Interface](/docs/images/mri_upload.png) | ![Prediction Results](/docs/images/prediction_output.png) | ![Explainable AI Heatmap](/docs/images/heatmap.png) | ![Analytics Dashboard](/docs/images/dashboard.png) | ![Case Management](/docs/images/case_list.png) |
-| Upload DICOM or image files | Instant 4-class prediction with confidence scores | Color-coded anatomical focus zones | Real-time cohort analytics | Searchable, sortable case history |
+<img width="1807" height="810" alt="image" src="https://github.com/user-attachments/assets/d22b3651-f612-469a-bf5b-9bab4ed2467a" />
+
+<img width="1919" height="975" alt="image" src="https://github.com/user-attachments/assets/6708b0c9-ee46-4eab-9d09-28cf094e778a" />
+
+<img width="1917" height="962" alt="image" src="https://github.com/user-attachments/assets/e3688526-050e-4666-bd09-77c0ba20773d" />
+
+<img width="1418" height="717" alt="image" src="https://github.com/user-attachments/assets/40aa649a-a033-4a48-bc83-a0577b266ae2" />
 
 ---
 
@@ -88,7 +87,8 @@ In a typical cardiology workflow, radiologists often face backlogs of MRI scans 
 
 **System Design & Data Flow:**
 
-![Architecture Diagram](/docs/images/architecture.png)
+<img width="2206" height="1434" alt="image" src="https://github.com/user-attachments/assets/0db44d6c-9aa5-4ee2-922b-fd199acfe4a7" />
+
 
 *High-level architecture showing user interface, Flask backend, TensorFlow model inference, IBM Cloud services (COS, Db2, Watson AI), and dashboard analytics pipeline*
 
