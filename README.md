@@ -1,4 +1,4 @@
-<img width="472" height="133" alt="image" src="https://github.com/user-attachments/assets/aa6eb434-ab93-463e-8280-5246524bc230" /># 🫀 AI-Powered Heart MRI Classification for Clinical Decision Support
+# 🫀 AI-Powered Heart MRI Classification for Clinical Decision Support
 
 ### 💎 **Enterprise AI for Global Cardiac Care: Explainable, Fast, Trusted**
 
