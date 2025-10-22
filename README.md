@@ -1,5 +1,9 @@
 <div align="center">
 
+![Banner](/docs/images/banner.png)
+
+[![Watch the demo](https://img.youtube.com/vi/JMZrROrt5qQ/0.jpg)](https://youtu.be/JMZrROrt5qQ?si=V046ShjApX__89Iv)
+
 # 🫀 AI‑Powered Heart MRI Classification
 
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Flask](https://img.shields.io/badge/Flask-2.x-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/) [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/) [![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-Services-052FAD?logo=ibmcloud&logoColor=white)](https://www.ibm.com/cloud)
@@ -29,116 +33,124 @@
 **What makes this project stand out from the crowd:**
 
 ### 🔥 **XAI Overlays: See What the AI Sees**
+
 - **Grad-CAM & Integrated Gradients** generate pixel-level heatmaps showing exactly which anatomical regions influenced each prediction
 - Transforms "black box" models into **transparent, trustworthy clinical tools**
 - Enables radiologists to validate AI reasoning against their own expert analysis
 
-### 🧠 **Proactive Clinical Insights**
-- Real-time confidence scoring helps clinicians understand prediction certainty
-- Automated flagging of ambiguous cases for human review
-- Historical case comparison and cohort analytics reveal patterns across patient populations
+### 🎨 **Advanced Multi-Class Classification**
 
-### 💬 **Real-Time Watsonx Chatbot Integration**
-- Query patient data, model predictions, and medical literature conversationally
-- Natural language access to complex diagnostic information
-- Reduces cognitive load during high-pressure clinical decision-making
+- **4-class pathology detection:**
+  - Normal
+  - Myocardial Infarction
+  - Dilated Cardiomyopathy (DCM)
+  - Hypertrophic Cardiomyopathy (HCM)
+- State-of-the-art CNN architecture (MobileNetV2 + custom layers) optimized for cardiac MRI
+- Real-time inference: predictions in <2 seconds
 
-### 🎯 **Breaking the Black Box**
-- Every prediction is auditable and explainable
-- Full model lineage tracking for regulatory compliance
-- Reproducible results with version-controlled models and data pipelines
+### ☁️ **Production-Ready IBM Cloud Integration**
 
----
+- **IBM Cloud Object Storage (COS):** Secure, scalable DICOM/MRI image storage
+- **IBM Db2 on Cloud:** Relational database for patient metadata, case history, and audit trails
+- **Watson Studio (optional):** Training pipeline for model retraining and continuous improvement
+- **Multi-region deployment:** Designed for HIPAA compliance and low-latency global access
 
-## 🏥 Clinical Use Case
+### 📊 **Interactive Clinical Dashboard**
 
-**Empowering Clinicians in Real-World Cardiac Care:**
-
-This application transforms how cardiologists and radiologists approach heart MRI analysis. When a patient's cardiac imaging arrives, the system accepts standard DICOM or PNG files and instantly classifies the MRI sequence (e.g., normal vs. pathological findings). Instead of waiting hours or days for specialist review, the AI provides an immediate preliminary assessment with visual explainability overlays highlighting regions of interest. Clinicians can quickly verify the AI's reasoning, prioritize urgent cases, and make informed treatment decisions faster. The system maintains a complete audit trail in IBM Db2, stores all imaging data securely in IBM Cloud Object Storage, and provides dashboard analytics to monitor diagnostic accuracy trends across the entire patient cohort. By augmenting—not replacing—clinical expertise with transparent AI insights, this tool reduces diagnostic bottlenecks, improves patient outcomes, and scales expert-level analysis to underserved regions globally.
-
----
-
-## 🚀 Overview
-
-This project delivers a clinician-friendly web app that classifies heart MRI sequences and surfaces explainable insights via XAI heatmaps. It streamlines the workflow from DICOM/PNG upload to inference, visualization, and report generation—aiming to augment, not replace, clinical decision-making.
-
-- **Fast, accurate MRI classification** with deep learning
-- **Explainability-first design** (Grad-CAM/Integrated Gradients overlays)
-- **Cloud-ready storage**, logging, and model lifecycle
-- **Production web UI** using Flask, with dashboard analytics
+- Real-time cohort analytics: confidence distributions, pathology prevalence, processing times
+- Case management UI: filter by diagnosis, sort by confidence, search patient IDs
+- Export reports for EMR/EHR integration
 
 ---
 
-## 🎯 Technical Achievements
+## 📸 Sample Results & Screenshots
 
-> **🎖️ IBM Finalist Selection** — Acknowledged for innovation, scalability, and clinical impact
+### 🖼️ **Image Gallery**
 
-- ✅ **Robust CNN-based classifier** with transfer learning (ResNet50/VGG16 backbones)
-- 🔎 **XAI overlays** to build clinician trust and traceability (Grad-CAM, Integrated Gradients)
-- ☁️ **IBM Cloud object storage + Db2 integration** for data and metadata
-- 🔐 **Role-based access**, audit-friendly logs, reproducible runs
-- 🚀 **Production-ready deployment** with Flask, containerization support
+<div align="center">
 
----
+| 📤 MRI Upload Interface | 🧠 Prediction Output |
+|:---:|:---:|
+| ![MRI Upload](/docs/images/mri_upload.png) | ![Prediction Output](/docs/images/prediction_output.png) |
+| *Upload MRI scans in DICOM or PNG/JPG format* | *Real-time classification with confidence scores* |
 
-## 🛠️ Technology Stack
+| 🔥 XAI Heatmap Visualization | 📊 Analytics Dashboard |
+|:---:|:---:|
+| ![XAI Heatmap](/docs/images/heatmap.png) | ![Dashboard](/docs/images/dashboard.png) |
+| *Grad-CAM heatmaps highlight diagnostic regions* | *Comprehensive cohort statistics and insights* |
 
-- **Application:** Flask, Jinja2, Bootstrap, Chart.js
-- **AI/ML:** TensorFlow/Keras, OpenCV/NumPy, scikit-image, Grad-CAM
-- **Data:** IBM Cloud Object Storage, IBM Db2 (metadata, results)
-- **Deployment:** Docker-ready, IBM Cloud deployment options
-- **XAI:** Grad-CAM, Integrated Gradients, visualization pipelines
+| 📋 Case List Management |
+|:---:|
+| ![Case List](/docs/images/case_list.png) |
+| *Browse, filter, and export historical cases* |
+
+</div>
 
 ---
 
 ## 🏗️ Architecture
 
+### 📐 **System Schematic**
+
+![Architecture Diagram](/docs/images/architecture.png)
+*End-to-end pipeline: Upload → Preprocessing → CNN Inference → XAI Generation → Storage → Dashboard*
+
+### 🔄 **Technical Flow**
+
+```mermaid
+graph LR
+    A[MRI Upload] --> B[Preprocessing]
+    B --> C[CNN Model]
+    C --> D[Prediction]
+    C --> E[XAI: Grad-CAM]
+    D --> F[IBM Db2]
+    E --> G[IBM COS]
+    F --> H[Dashboard]
+    G --> H
 ```
-┌─────────────────┐
-│   User Upload   │
-│  (DICOM/PNG)    │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Flask Web App  │
-│  (UI + API)     │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐       ┌──────────────────┐
-│  TensorFlow     │◄──────┤  XAI Engine      │
-│  CNN Classifier │       │  (Grad-CAM)      │
-└────────┬────────┘       └──────────────────┘
-         │
-         ▼
-┌─────────────────────────────────────┐
-│         IBM Cloud Services          │
-│  ┌─────────────┐   ┌──────────────┐ │
-│  │ Object      │   │   Db2        │ │
-│  │ Storage     │   │   Database   │ │
-│  └─────────────┘   └──────────────┘ │
-└─────────────────────────────────────┘
-```
+
+### 🧱 **Key Components**
+
+1. **Frontend (Flask + Jinja2):**
+   - Responsive web UI for upload, viewing, and dashboard
+   - AJAX-based asynchronous processing for smooth UX
+
+2. **Backend (Python + TensorFlow):**
+   - MobileNetV2 base + custom dense layers
+   - Grad-CAM / Integrated Gradients for XAI
+   - Image preprocessing pipeline (resize, normalize, augment)
+
+3. **Storage (IBM Cloud):**
+   - **Object Storage:** DICOM/image files
+   - **Db2:** Case metadata, predictions, timestamps
+
+4. **Model Training:**
+   - Dataset: Curated cardiac MRI dataset (details in `notebooks/`)
+   - Augmentation: rotation, zoom, brightness, contrast
+   - Metrics: accuracy, precision, recall, F1, AUC-ROC
 
 ---
 
-## ⚙️ Setup & Installation
+## 🚀 Quick Start
 
-### Prerequisites
+### 📋 Prerequisites
+
 - Python 3.9+
-- pip and virtualenv
-- IBM Cloud account (for COS and Db2 services)
+- IBM Cloud account (for COS & Db2)
+- TensorFlow 2.x
+- Flask 2.x
 
-### Installation Steps
+### 🔧 Installation
 
 1) **Clone the repository:**
+
 ```bash
 git clone https://github.com/Darkwebnew/AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support.git
 cd AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support
 ```
 
 2) **Install dependencies:**
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -148,6 +160,7 @@ pip install -r requirements.txt
    - `DB2_DSN` / credentials
 
 4) **Launch the application:**
+
 ```bash
 python app.py
 # or
