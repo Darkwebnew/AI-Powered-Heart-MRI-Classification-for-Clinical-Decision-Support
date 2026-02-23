@@ -39,9 +39,7 @@
 
 ## 🎥 Watch the Demo
 
-<a href="https://github.com/Darkwebnew/AI-Powered-Heart-MRI-Classification-for-Clinical-Decision-Support/blob/main/img/Video.mp4">
-  <img src="img/demo_thumbnail.png" width="700" alt="Watch the Demo — Heart MRI AI"/>
-</a>
+[![Watch the demo](img/demo_thumbnail.png)](https://youtu.be/JMZrROrt5qQ)
 
 *Click above — MRI upload → instant classification → explainable AI heatmaps → clinical dashboard*
 
