@@ -247,7 +247,7 @@ Clinical Dashboard (graphs.html / Plotly.js)
 
 | Medical AI Assistance | XAI Heatmap Output |
 |----------------------|--------------------|
-| ![AI](img/Medical_AI_Assistance.jpeg) | ![Heatmap](static/uploads/heatmap-IM12012.jpg) |
+| ![AI](img/Medical_AI_Assistance.jpeg) | ![Heatmap](img/heatmap-IM12012.jpeg) |
 
 ### ☁️ IBM Cloud Integration
 
@@ -533,7 +533,6 @@ Full spec → `openapi_spec.json` (importable into Swagger UI / Postman)
 
 | Role | Name | Institution |
 |------|------|-------------|
-| Project Supervisor | **Ms. V. Swedha** | Saveetha Engineering College, Chennai |
 | Event Coordinator | **Dr. Karthika RN** | IBM Z Datathon 2025 |
 
 </div>
@@ -573,7 +572,7 @@ Full spec → `openapi_spec.json` (importable into Swagger UI / Postman)
 
 <br/>
 
-<a href="https://www.buymeacoffee.com/darkwebnew" target="_blank">
+<a href="https://www.buymeacoffee.com/sriramnvks" target="_blank">
 <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" height="50"/>
 </a>
 
@@ -584,7 +583,7 @@ Full spec → `openapi_spec.json` (importable into Swagger UI / Postman)
 <br/>
 
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20on%20GitHub-%23EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/darkwebnew)
-[![PayPal](https://img.shields.io/badge/Donate%20via%20PayPal-%2300457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/darkwebnew)
+[![PayPal](https://img.shields.io/badge/Donate%20via%20PayPal-%2300457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/sriramnvks)
 
 </div>
 
