@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=3,9,18&height=200&section=header&text=Heart%20MRI%20AI&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35&desc=AI-Powered%20Cardiac%20MRI%20Classification%20%E2%80%94%20Explainable%20AI%20%7C%20IBM%20Cloud%20%7C%20Clinical%20Decision%20Support&descAlignY=55&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=3,9,18&height=200&section=header&text=Heart%20Disease%20Predictor&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35&desc=AI-Powered%20Cardiac%20MRI%20Classification%20%E2%80%94%20Explainable%20AI%20%7C%20IBM%20Cloud%20%7C%20Clinical%20Decision%20Support&descAlignY=55&descSize=14" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=E63946&center=true&vCenter=true&multiline=true&width=900&height=60&lines=XAI+Cardiac+Diagnostics+%7C+IBM+Cloud+COS+%2B+Db2+%7C+IBM+Z+Datathon+2025+%F0%9F%A5%88)](https://git.io/typing-svg)
 
