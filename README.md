@@ -572,24 +572,34 @@ Full spec → `openapi_spec.json` (importable into Swagger UI / Postman)
 
 <div align="center">
 
-**If Heart MRI AI helped your research or clinical project — consider supporting continued development!**
+**If Heart MRI AI helped your research, studies, IBM Datathon journey, or clinical AI project — consider supporting continued development!**
 
 <br/>
 
-<a href="https://www.buymeacoffee.com/sriramnvks" target="_blank">
-<img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" height="50"/>
+<a href="https://buymeachai.ezee.li/Harish_Ammu">
+<img src="https://img.shields.io/badge/🇮🇳_Buy_Me_A_Chai-FF6B35?style=for-the-badge" height="50"/>
+</a>
+
+<a href="https://buymeacoffee.com/sriramnvks">
+<img src="https://img.shields.io/badge/☕_Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" height="50"/>
 </a>
 
 <br/><br/>
 
-*Your support helps build better AI healthcare tools and publish more research.*
+<a href="https://github.com/sponsors/darkwebnew">
+<img src="https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" height="50"/>
+</a>
 
-<br/>
+<a href="https://paypal.me/sriramnvks">
+<img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" height="50"/>
+</a>
 
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20on%20GitHub-%23EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/darkwebnew)
-[![PayPal](https://img.shields.io/badge/Donate%20via%20PayPal-%2300457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/sriramnvks)
+<br/><br/>
+
+*Your support helps build better AI healthcare solutions, medical imaging research, explainable AI systems, and future open-source innovations for the global healthcare community.*
 
 </div>
+
 
 ---
 
